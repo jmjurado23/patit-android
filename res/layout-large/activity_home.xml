@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity" >
+
+
+
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_margin="18dp" > -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/imageView1" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentTop="true" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:src="@drawable/title" /> -->
+
+<!--     </RelativeLayout> -->
+
+    <TextView
+        android:id="@+id/textViewTitleHome"
+        android:layout_width="match_parent"
+        android:background="@drawable/blue"
+        android:layout_height="70dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="16dp"
+        
+        android:paddingTop="24dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+         />
+    <TextView
+        android:id="@+id/textViewTitleHome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="18dp"
+        android:background="@drawable/blue"
+        android:paddingRight="16dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:text="@string/inyourpockets"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ListView
+        android:id="@+id/listViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+</LinearLayout>
+

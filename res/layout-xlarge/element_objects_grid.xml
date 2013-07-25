@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeelementpocket"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp" >
+
+        <ImageView
+            android:id="@+id/imageViewPocketGrid"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/defaultimage" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeYourPocket"
+        android:layout_width="14dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/purplebordergrid" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeYourPocketGridBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativelayoutimage"
+        android:layout_toRightOf="@+id/relativeYourPocket"
+        android:background="#222222"
+        android:paddingRight="6dp" >
+
+        <CheckedTextView
+            android:id="@+id/textViewTitlePocketGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/pocket"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textViewUserPocketGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textViewTitlePocketGrid"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewTitlePocketGrid"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#9933CC" />
+    </RelativeLayout>
+
+</RelativeLayout>

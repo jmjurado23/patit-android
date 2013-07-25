@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectitemlistbutton"
+    android:orientation="horizontal" >
+    
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewNewElement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+			android:layout_margin="6dp"
+            android:layout_weight="0.44"
+            android:src="@drawable/editicon" />
+
+		 <TextView
+		     android:id="@+id/TextViewNewElement"
+		     android:layout_width="180dp"
+		     android:layout_height="72dp"
+		     android:layout_weight="0.86"
+		     android:gravity="center"
+		     android:shadowColor="#000000"
+		     android:shadowDx="2"
+		     android:shadowDy="2"
+		     android:textAppearance="?android:attr/textAppearanceMedium"
+		     android:text="@string/miscellaneous_theme"
+		     android:textColor="#ffffff"
+		     android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dd000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="64dp"
+        android:background="#33b5e5" >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/comment"
+            android:textAppearance="?android:attr/listSeparatorTextViewStyle" />
+		<TextView
+            android:id="@+id/line"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:paddingTop="5dip" />
+		<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/cfgLblWriteComment"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/writecomment" />
+		
+		<EditText
+                android:id="@+id/editTextNewComment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="6dp"
+                android:ems="10"
+                
+                android:gravity="top"
+                android:hint="@string/writecommentdefault" >
+		    <requestFocus />
+		</EditText>
+
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+	<LinearLayout
+	    		android:id="@+id/linearLayout1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:orientation="vertical" >
+		    </LinearLayout>
+		    <Button
+		        android:id="@+id/cfgBtnNewComment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_toRightOf="@+id/linearLayout1"
+		        android:text="@string/sendComment" />
+
+		    <Button
+		        android:id="@+id/cfgBtnCancelComment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_alignRight="@+id/linearLayout1"
+		        android:text="@string/cancel" />
+
+		    
+		</RelativeLayout>
+
+		</LinearLayout>
+
+    </LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,222 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pocket.patit"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:label="@string/regtext" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MainPocketsActivity"
+            android:label="@string/title_activity_home_pockets" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.YourPocketsActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_your_pockets"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.RandomPocketsActivity"
+            android:label="@string/title_activity_random_pockets"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.FeaturedPocketsActivity"
+            android:label="@string/title_activity_featured_pockets"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SponsoredPocketsActivity"
+            android:label="@string/title_activity_sponsored_pockets"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SearchPocketsActivity"
+            android:label="@string/title_activity_search_pocket"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.NewPocketActivity"
+            android:label="@string/new_pocket" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.UpdatePocketActivity"
+            android:label="@string/update_pocket" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SelectNewElementTypeActivity"
+            android:label="@string/title_activity_select_new_element_type" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.YourPocketsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PreferencesActivity"
+            android:label="@string/title_activity_preferences"
+            android:theme="@style/prefrencesTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.InfoUserActivity"
+            android:label="@string/title_activity_info_user" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.DescriptionPocketActivity"
+            android:label="@string/title_activity_description_pocket" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.DescriptionObjectActivity"
+            android:label="@string/title_activity_description_object" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.MainPocketsActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.UploadService" >
+        </service>
+        <service android:name=".services.DownloadService" >
+        </service>
+
+        <activity
+            android:name=".activities.ViewObjectImageActivity"
+            android:label="@string/title_activity_view_object" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.pocket.patit.activities.MainPocketsActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ViewObjectSoundActivity"
+            android:label="@string/title_activity_view_object" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ViewObjectTextActivity"
+            android:label="@string/title_activity_view_object" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ViewObjectURLActivity"
+            android:label="@string/title_activity_view_object" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.EditObjectActivity"
+            android:label="@string/title_activity_edit_object" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/title_activity_about" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activities.PreferencesActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ItemListActivity"
+            android:label="@string/title_item_list" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ItemDetailActivity"
+            android:label="@string/title_item_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pocket.patit.activities.ItemListActivity" />
+        </activity>
+    </application>
+
+</manifest>

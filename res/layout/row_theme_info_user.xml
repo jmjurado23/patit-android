@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#33b5e5"
+        android:orientation="horizontal" >
+
+		  <TextView
+		      android:id="@+id/TextViewThemeNewPocket"
+		      android:layout_width="102dp"
+		      android:layout_height="match_parent"
+		      android:background="@drawable/miscback"
+		      android:gravity="center"
+		      android:shadowColor="#000000"
+		      android:shadowRadius="5"
+		      android:shadowDx="2"
+		      android:shadowDy="2"
+		      android:text="@string/miscellaneous_theme"
+		      android:textColor="#ffffff"
+		      android:textStyle="bold" />
+
+		 <TextView 
+		     android:id="@+id/TextViewRowThemeInfoUser"
+		     android:layout_width="match_parent"
+		     android:layout_marginLeft="6dp"
+		     android:layout_height="wrap_content"
+		     android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

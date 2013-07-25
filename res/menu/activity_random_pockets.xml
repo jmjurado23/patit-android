@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+     <item
+        android:id="@+id/menu_item_share_action_provider_action_bar"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:showAsAction="ifRoom"
+        android:title="@string/shareicon"/>
+    <item
+        android:id="@+id/menu_item_share_action_provider_overflow"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/shareicondespl"
+        />
+     <item
+        android:id="@+id/refreshicon"
+        android:icon="@drawable/refreshicon"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/refresh"/>
+   
+    
+
+</menu>

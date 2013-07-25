@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back_white">
+
+    <RelativeLayout
+        android:id="@+id/relativeSinglePocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <ImageView
+            android:id="@+id/imageViewSinglePocket"
+            android:layout_width="106dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/textViewSinglePocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/imageViewSinglePocket"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:scrollHorizontally="true"
+            
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/pocket"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewSinglePocket"
+            android:layout_toLeftOf="@+id/imageViewSinglePocket" >
+
+            <TextView
+                android:id="@+id/textViewSinglePocketUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="6dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="user"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/im"
+            android:src="@drawable/imageiconmini"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewSinglePocket"
+            android:layout_below="@+id/linearLayout1"
+           android:layout_marginRight="3dp"
+             />
+            
+        <TextView
+            android:id="@+id/n_im"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/im"
+            android:layout_alignBottom="@+id/im"
+            android:layout_toRightOf="@+id/im"
+            android:layout_marginRight="6dp"
+            android:text="ss" />
+        <ImageView
+            android:id="@+id/mu"
+            android:src="@drawable/musiciconmini"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/n_im"
+            android:layout_marginRight="3dp"
+            android:layout_below="@+id/linearLayout1"
+ 
+             />
+            
+        <TextView
+            android:id="@+id/n_mu"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/im"
+            android:layout_alignBottom="@+id/im"
+            android:layout_toRightOf="@+id/mu"
+            android:layout_marginRight="6dp"
+            android:text="ss" />
+        
+        <ImageView
+            android:id="@+id/tx"
+            android:src="@drawable/texticonmini"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/n_mu"
+            android:layout_marginRight="3dp"
+            android:layout_below="@+id/linearLayout1"
+ 
+             />
+            
+        <TextView
+            android:id="@+id/n_tx"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/im"
+            android:layout_alignBottom="@+id/im"
+            android:layout_toRightOf="@+id/tx"
+            android:layout_marginRight="6dp"
+            android:text="ss" />
+		<ImageView
+            android:id="@+id/ur"
+            android:src="@drawable/wwwiconmini"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/n_tx"
+            android:layout_marginRight="3dp"
+            android:layout_below="@+id/linearLayout1"
+ 
+             />
+            
+        <TextView
+            android:id="@+id/n_ur"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/im"
+            android:layout_alignBottom="@+id/im"
+            android:layout_toRightOf="@+id/ur"
+            android:layout_marginRight="6dp"
+            android:text="ss" />
+        
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/zipslider"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/relativeSinglePocket"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/zip"/>
+
+    <GridView
+        android:id="@+id/gridViewSinglePocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/zipslider"
+        android:layout_marginBottom="50dp"
+        android:numColumns="2"
+        tools:listitem="@android:layout/simple_list_item_2" >
+
+    </GridView>
+
+    <com.pocket.patit.views.ClickableSlidingDrawer
+        android:id="@+id/slidingDrawerPocket"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/zipslider"
+        android:allowSingleTap="false"
+        android:animateOnClick="false"
+        android:clickable="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <RelativeLayout
+            android:id="@+id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:animateOnClick="false"
+            android:background="@drawable/pocketclosehandle" >
+
+           
+            <Button
+                android:id="@+id/buttonAddNewElementPocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/darkbluebutton"
+                android:drawableLeft="@drawable/newitemicon"
+                android:text="@string/newitem"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/buttonCommentPocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:paddingRight="4dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_toLeftOf="@id/buttonAddNewElementPocket"
+                android:background="@drawable/darkbluebutton"
+                android:drawableLeft="@drawable/commenticon"
+                android:text="@string/newcomment"
+                android:textColor="#ffffff" />
+             <ImageButton
+                android:id="@+id/buttonFeaturedPocketYour"
+                android:src="@drawable/unfeatured_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/buttonCommentPocket"
+                android:layout_margin="4dp"
+                android:background="@drawable/darkbluebutton"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/poketclose"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ccffffff" >
+
+                <ListView
+                    android:id="@+id/listViewComments"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.pocket.patit.views.ClickableSlidingDrawer>
+
+</RelativeLayout>

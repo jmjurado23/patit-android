@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridView
+       android:id="@+id/gridViewMainPocket"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:numColumns="4"
+	    android:horizontalSpacing="1dp"
+	    android:verticalSpacing="1dp"
+	    android:stretchMode="columnWidth"
+	    tools:listitem="@android:layout/simple_list_item_2" >
+    </GridView>
+
+	
+</LinearLayout>

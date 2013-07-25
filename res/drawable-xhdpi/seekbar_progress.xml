@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/zipopen"
+            android:tileMode="repeat"
+        />
+
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/zipopen"
+
+
+        />
+        </clip>
+    </item>
+    <item
+        android:id="@android:id/progress">
+
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/zipclose"
+            android:tileMode="repeat"
+            android:antialias="true"
+        />
+
+   </item>
+</layer-list>

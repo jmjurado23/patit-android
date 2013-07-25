@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        
+       >
+
+    <PreferenceCategory
+            android:title="@string/preferences_generals">
+
+        
+         <CheckBoxPreference
+                android:key="key_preference_ext_navigator"
+                android:title="@string/extNavigatorPref"
+                android:summary="@string/extNavigatorSumPref" />
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+            android:title="@string/preferences_personal">
+
+        <CheckBoxPreference
+                android:key="key_preference_vibrate"
+                android:title="@string/vibratePref"
+                android:summary="@string/vibrateSumPref" />
+        
+        <CheckBoxPreference
+                android:key="key_preference_sound"
+                android:title="@string/soundPref"
+                android:summary="@string/soundSumPref" />
+
+    </PreferenceCategory>
+    
+
+    <PreferenceCategory
+            android:title="@string/store_preferences">
+
+        <Preference
+                android:key="key_preference_store"
+                android:title="@string/storePref"
+                android:summary="@string/storeSumPref" 
+                android:clickable="true"/>
+        <EditTextPreference 
+            android:key="key_preference_file_route" 
+            android:title="@string/fileRoutePref" 
+            android:summary="@string/fileRouteSumPref" 
+            android:dialogTitle="@string/dialogFileRoutePref"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="@string/info_preferences">
+
+       <PreferenceScreen android:title="@string/aboutTitlePref" android:summary="@string/aboutTitleSumPref">
+				<intent 
+   	 android:action="android.intent.action.MAIN" 
+   	android:targetPackage="com.pocket.patit" 
+    android:targetClass="com.pocket.patit.activities.AboutActivity"/>
+		</PreferenceScreen>
+
+    </PreferenceCategory>
+
+
+
+
+
+</PreferenceScreen>

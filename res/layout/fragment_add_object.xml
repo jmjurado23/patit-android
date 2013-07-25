@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dd000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:background="#99CC00" >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/newobject"
+            android:textAppearance="?android:attr/listSeparatorTextViewStyle" />
+		<TextView
+            android:id="@+id/line"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:paddingTop="5dip" />
+		<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+		  <TextView
+		    android:id="@+id/cfgLblWriteNameObject"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/writenewobjectname" />
+		  <EditText
+                android:id="@+id/editTextNewNameObject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/newnameobjectnamedefault" />
+		<TextView
+		    android:id="@+id/cfgLblWriteDescriptionObject"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/writenewdescriptionobject" />
+		
+		<EditText
+                android:id="@+id/editTextDescriptionObject"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:ems="10"
+                android:hint="@string/writenewdescriptionobjectdefault" />
+
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<Button
+			    android:id="@+id/buttonNewObjectType"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"/>
+
+			<TextView
+			    android:id="@+id/textViewPreviewNewObject"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBaseline="@+id/buttonNewObjectType"
+			    android:layout_alignBottom="@+id/buttonNewObjectType"
+			    android:layout_toRightOf="@+id/buttonNewObjectType"
+			    android:text="Small Text"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		</RelativeLayout>
+
+		<Button
+		    android:id="@+id/cfgBtnNewObject"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/sendComment" />
+
+		</LinearLayout>
+
+    </LinearLayout>
+	
+</LinearLayout>

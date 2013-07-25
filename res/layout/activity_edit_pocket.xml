@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_newpocket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_white"
+    tools:context=".NewPocketActicity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:background="#99CC00"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewNewPocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/edit_pocket"
+            android:textAppearance="?android:attr/listSeparatorTextViewStyle" />
+
+        <TextView
+            android:id="@+id/textViewNameNewPocket"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cfgLblNameNewPocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newpocketdefaultname" />
+
+            <EditText
+                android:id="@+id/editTextNewPocket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/newpocketdefaultname" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/cfgLblDescriptionNewPocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descriptionnewpocketdefault" />
+
+            <EditText
+                android:id="@+id/editTextNewPocketDesc"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/descriptionnewpocketdefault" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/cfgLblThemeNewPocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/themenewpocketdefault" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/TextViewThemeNewPocket"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.86"
+                        android:background="@drawable/miscback"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:text="@string/miscellaneous_theme"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/buttonEditTheme"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonpress"
+                        android:src="@drawable/editicon"
+                        android:layout_marginBottom="6dp" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

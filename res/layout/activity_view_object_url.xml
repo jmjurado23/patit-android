@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_white"
+    tools:context=".ViewObjectActivity" >
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layoutViewObjectData" >
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/textViewObjURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="18dp"
+            android:layout_centerVertical="true"
+            android:text="@string/dowloading"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+    
+     <LinearLayout
+        android:id="@+id/layoutViewObjectData"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeYourPocketGridBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/relativeYourPocket"
+        android:background="#222222"
+         >
+
+        <CheckedTextView
+            android:id="@+id/textViewTitlePocketGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/pocket"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginRight="6dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textViewUrlObjectGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textViewTitlePocketGrid"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewTitlePocketGrid"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#9933CC" 
+            android:layout_marginRight="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/relativeYourPocket"
+            android:layout_width="14dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/purplebordergrid" >
+        </LinearLayout>
+
+    </RelativeLayout>
+        </LinearLayout>
+
+</RelativeLayout>
+</FrameLayout>

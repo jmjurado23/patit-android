@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectitemlistbutton"
+    android:orientation="horizontal" >
+    
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewNewElement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/yourpocket" />
+
+		 <TextView
+		     android:id="@+id/TextViewPocketName"
+		     android:layout_width="match_parent"
+		     android:layout_marginLeft="6dp"
+		     android:layout_height="48dp"
+		     android:gravity="center_vertical"
+		     android:ellipsize="marquee"
+		     android:selectAllOnFocus="true"
+		     android:marqueeRepeatLimit="marquee_forever"
+		     android:maxLines="1"
+		     android:scrollHorizontally="true"
+		     android:shadowColor="#000000"
+		     android:shadowDx="2"
+		     android:shadowDy="2"
+		     android:singleLine="true"
+		     android:text="@string/miscellaneous_theme"
+		     android:textAppearance="?android:attr/textAppearanceMedium"
+		     android:textColor="#ffffff"
+		     android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

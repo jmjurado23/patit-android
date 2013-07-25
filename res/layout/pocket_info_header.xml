@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/listSeparatorTextViewStyle" />
+		<TextView
+		    android:id="@+id/line"
+		    style="?android:attr/listSeparatorTextViewStyle"
+		    android:paddingTop="5dip"
+		    android:background="#000000"
+		    android:gravity="center_horizontal"
+		    android:layout_below="@+id/connect_help"
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp" />	
+    <TextView
+        android:id="@+id/textViewDescriptionPocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+    	android:layout_margin="8dp"
+        
+        android:textColor="#0099CC" />
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comments"
+            
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/listSeparatorTextViewStyle" />
+		<TextView
+		    android:id="@+id/line"
+		    style="?android:attr/listSeparatorTextViewStyle"
+		    android:paddingTop="5dip"
+		    android:background="#000000"
+		    android:gravity="center_horizontal"
+		    android:layout_below="@+id/connect_help"
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp" />	
+
+</LinearLayout>
